@@ -1,11 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.LikeMe" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.LikeMe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
         <!-- No ActionBar -->
         <item name="android:windowFullscreen">true</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="backgroundTint">#FFFFFF</item>
 
         <!-- Font Family -->
         <item name="android:fontFamily">@font/gmsans</item>
