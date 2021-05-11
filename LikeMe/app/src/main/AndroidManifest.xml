@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LikeMe">
+        <activity android:name=".QuestionActivity"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".PermissionActivity">
             <intent-filter>

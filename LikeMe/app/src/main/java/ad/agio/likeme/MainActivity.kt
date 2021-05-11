@@ -2,6 +2,7 @@ package ad.agio.likeme
 
 
 import ad.agio.likeme.databinding.ActivityMainBinding
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -24,11 +25,18 @@ class MainActivity : AppCompatActivity() {
         val ui = UI(this)
 
         binding.gridLayout.columnCount = 5
-        val size = (ui.getScreenSize().first - ui.dp(64)) / 4
+        val size = (ui.getScreenSize().first - ui.dp(64)) / 5
 
-        for(i in 0..30) {
+        for(i in 1..30) {
             val view = layoutInflater.inflate(R.layout.button_grid, binding.gridLayout, false)
-            view.findViewById<Button>(R.id.button).text = i.toString()
+            val button = view.findViewById<Button>(R.id.button)
+            button.text = i.toString()
+            button.setOnClickListener {
+                val intent = Intent(this, QuestionActivity::class.java)
+                intent.putExtra("number", i)
+                startActivity(intent)
+            }
+
             binding.gridLayout.addView(view, size, size)
         }
     }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">나;다움</string>
+    <string name="hint"><u>힌트</u></string>
 </resources>
