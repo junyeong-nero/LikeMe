@@ -22,6 +22,9 @@ class QuestionActivity : AppCompatActivity() {
         val extra = intent.extras!!
         val index = extra.getInt("number")
         binding.question.text = String.format("Q. %d", index)
+        binding.back.setOnClickListener {
+            finish()
+        }
         binding.hint.setOnClickListener {
             hint(index)
         }

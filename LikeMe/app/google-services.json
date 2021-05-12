@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "130451929203",
+    "project_id": "likeme-4017a",
+    "storage_bucket": "likeme-4017a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130451929203:android:3170073024f6706fa51206",
+        "android_client_info": {
+          "package_name": "ad.agio.likeme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130451929203-c2bo2vpk3u8pf9jal9tfinbealh746l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByJPHYMOU1ZGLh3SjZurYjhm7ChwhlsHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130451929203-c2bo2vpk3u8pf9jal9tfinbealh746l0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
