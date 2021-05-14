@@ -1,6 +1,6 @@
-package ad.agio.likeme
+package ad.agio.likeme.activities
 
-import ad.agio.likeme.databinding.ActivityMainBinding
+import ad.agio.likeme.CustomAdapter
 import ad.agio.likeme.databinding.ActivityQuestionListBinding
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

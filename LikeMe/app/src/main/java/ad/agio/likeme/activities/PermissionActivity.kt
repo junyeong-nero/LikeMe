@@ -1,5 +1,6 @@
-package ad.agio.likeme
+package ad.agio.likeme.activities
 
+import ad.agio.likeme.R
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

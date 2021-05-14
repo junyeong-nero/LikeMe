@@ -1,4 +1,4 @@
-package ad.agio.likeme
+package ad.agio.likeme.activities
 
 import ad.agio.likeme.controller.DataController
 import ad.agio.likeme.databinding.ActivityQuestionBinding

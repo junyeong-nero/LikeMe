@@ -1,13 +1,13 @@
-package ad.agio.likeme
+package ad.agio.likeme.activities
 
+import ad.agio.likeme.R
+import ad.agio.likeme.UI
 import ad.agio.likeme.databinding.ActivityMainBinding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.util.TypedValue
 import android.widget.Button
-import android.widget.GridLayout
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.back.setOnClickListener {
-            startActivity(Intent(this, QuestionListActivity::class.java))
+        binding.setting.setOnClickListener {
+            startActivity(Intent(this, SettingActivity::class.java))
         }
 
         val ui = UI(this)
