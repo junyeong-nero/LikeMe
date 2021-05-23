@@ -8,7 +8,7 @@
         <item name="windowNoTitle">true</item>
 
         <!-- Font Family -->
-        <item name="android:fontFamily">@font/gmsans</item>
+        <item name="android:fontFamily">@font/apple_m</item>
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">#F48FB1</item>
