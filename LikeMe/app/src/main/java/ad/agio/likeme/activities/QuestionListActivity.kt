@@ -5,6 +5,7 @@ import ad.agio.likeme.databinding.ActivityQuestionListBinding
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.view.size
 import java.util.*
 
 class QuestionListActivity : AppCompatActivity() {
@@ -26,5 +27,17 @@ class QuestionListActivity : AppCompatActivity() {
         val adapter = CustomAdapter(this, 30)
         binding.viewpager.adapter = adapter
         binding.viewpager.setCurrentItem(index, false)
+
+        binding.nextQ.setOnClickListener { moveViewpager(1) }
+        binding.previousQ.setOnClickListener { moveViewpager(-1) }
+    }
+
+    fun moveViewpager(change: Int) {
+        var que = binding.viewpager.currentItem + change
+        if(que < 0)
+            que = 0
+        else if(que >= binding.viewpager.size)
+            que = binding.viewpager.size - 1
+        binding.viewpager.setCurrentItem(que, true)
     }
 }

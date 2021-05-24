@@ -45,6 +45,10 @@ class CustomAdapter(private val context: Context, private val count: Int) :
         return ViewHolder(view)
     }
 
+    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+        super.onAttachedToRecyclerView(recyclerView)
+    }
+
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         viewHolder.question.text = String.format("Q. %d", position + 1);
 
@@ -64,10 +68,10 @@ class CustomAdapter(private val context: Context, private val count: Int) :
         }
 
         val preferenceController = PreferenceController(context)
-        viewHolder.edit.setText(preferenceController.readData(position.toString()))
+        viewHolder.edit.setText(preferenceController.readData("LikeMe:$position"))
         viewHolder.edit.addTextChangedListener {
             log("save!")
-            preferenceController.saveData(position.toString(), viewHolder.edit.text.toString())
+            preferenceController.saveData("LikeMe:$position", viewHolder.edit.text.toString())
         }
     }
 
